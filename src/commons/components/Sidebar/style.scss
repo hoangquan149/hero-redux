@@ -1,0 +1,35 @@
+.sidebar-wrapper {
+   background: #222527;
+   width: 240px !important;
+   height: 100vh;
+
+   .menu-item {
+      display: flex;
+      align-items: center;
+      height: 50px;
+   }
+
+   .sidebar-title {
+      padding: 13px;
+      font-size: 20px;
+      text-align: center;
+      color: #ffffff;
+   }
+}
+
+//pc
+@media only screen and (min-width: 1024px) {
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .sidebar-wrapper {
+      // width: 200px !important;
+      display: none;
+   }
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .sidebar-wrapper {
+      display: none;
+   }
+}

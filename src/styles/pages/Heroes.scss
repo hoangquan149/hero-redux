@@ -1,0 +1,80 @@
+.box-list-heroes {
+   height: calc(100vh - 105px);
+   min-height: 550px;
+}
+
+.box-content-heroes {
+   width: 100%;
+   height: calc(100vh - 150px);
+}
+
+.modal-form-hero {
+   .MuiDialog-container {
+      .MuiPaper-root {
+         .MuiDialogContent-root {
+            .box-image {
+               width: 100px;
+               height: 100px;
+               position: relative;
+               border: 1px #ededed dashed;
+            }
+            .box-image {
+               //  &__delete {
+               //     font-size: 25px;
+               //     position: absolute;
+               //     right: -10px;
+               //     top: -1px;
+               //     color: #c31f1f;
+               //     cursor: pointer;
+               //  }
+            }
+         }
+      }
+   }
+}
+
+.modal-detail {
+   .MuiDialog-container {
+      // max-width: unset;
+      // height: 500px;
+      .MuiPaper-root {
+         width: 20%;
+         height: 400px;
+
+         .MuiDialogContent-root {
+         }
+      }
+   }
+}
+
+//pc
+@media only screen and (min-width: 1024px) {
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .box-list-heroes {
+      height: calc(100vh - 80px);
+      min-height: 100%;
+   }
+
+   .modal-form-hero {
+      .MuiDialog-container {
+         .MuiPaper-root {
+            width: 100%;
+            height: 80vh;
+         }
+      }
+   }
+
+   .modal-detail {
+      .MuiDialog-container {
+         .MuiPaper-root {
+            width: 100%;
+            height: 50vh;
+         }
+      }
+   }
+}
